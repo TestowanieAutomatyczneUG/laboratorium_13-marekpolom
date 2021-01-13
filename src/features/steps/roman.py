@@ -1,10 +1,10 @@
 from behave import *
-from src.sample.roman import roman
+from src.sample.roman import Roman
 from assertpy import *
 
 @given(u'Roman app is run')
 def step_impl(context):
-    context.roman = roman
+    context.roman = context.c.roman
 
 
 @when(u'I input "1"')
